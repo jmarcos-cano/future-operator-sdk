@@ -1,0 +1,5 @@
+---
+- group: helm.operator-sdk
+  version: v1alpha1
+  kind: Mariadb
+  chart: helm-charts/mariadb

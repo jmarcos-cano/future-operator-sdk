@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  helm-operator:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2020-06-09T18:55:18.909384-06:00"
+    description: A Helm chart for Kubernetes
+    digest: eb83e4ca94c44931a0396481e36548056731650d83f7a98c800161a682bb973b
+    name: helm-operator
+    type: application
+    urls:
+    - https://jmarcos-cano.github.io/future-operator-sdk/dist/helm-operator-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-06-09T18:55:18.908598-06:00"
