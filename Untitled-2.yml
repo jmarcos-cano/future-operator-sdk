@@ -1,0 +1,16 @@
+apiVersion: helm.operator-sdk/v1alpha1
+kind: CanoPerator
+metadata:
+  name: my-operator
+spec:
+  version: 1.0.4
+  machine-sets:
+    - id: master
+      replicas: 5
+      config:
+        isMaster: true
+        dataPath: /var/lib/canoperator
+    - id: slaves
+      replicas: 9
+      config:
+        isMaster: false
