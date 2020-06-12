@@ -3,12 +3,12 @@ entries:
   my-helm-operator:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2020-06-09T19:02:58.610222-06:00"
+    created: "2020-06-10T23:22:26.85487-06:00"
     description: A Helm chart for Kubernetes
-    digest: 95e8305dc801a7dafb759691d08de0f9bd231958326ecd36aa51809d235443dd
+    digest: c4c12ee3ba978e06a9cf30f09e48f526550d47fc475deba5fa61f1ac55e222ec
     name: my-helm-operator
     type: application
     urls:
-    - https://jmarcos-cano.github.io/future-operator-sdk/dist/my-helm-operator-0.1.0.tgz
+    - https://jmarcos-cano.github.io/future-operator-sdk/public/my-helm-operator-0.1.0.tgz
     version: 0.1.0
-generated: "2020-06-09T19:02:58.609642-06:00"
+generated: "2020-06-10T23:22:26.854288-06:00"

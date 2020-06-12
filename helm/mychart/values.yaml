@@ -5,7 +5,7 @@
 replicaCount: 1
 
 image:
-  repository: mcano/future-is-now:1.0
+  repository: mcano/future-is-now
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
