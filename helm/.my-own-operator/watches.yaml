@@ -1,5 +1,0 @@
----
-- group: helm.operator-sdk
-  version: v1alpha1
-  kind: MyHelmOperator
-  chart: helm-charts/my-helm-operator

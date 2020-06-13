@@ -15,5 +15,12 @@ demo: crd
 deploy:
 	kubectl apply -f deploy/crds/helm.operator-sdk_v1alpha1_timemachine_cr.yaml
 
+full-demo: crd
+	kubectl apply -f deploy/
+	${MAKE} deploy
+
+
 undo:
-	kubectl delete -f deploy/crds/helm.operator-sdk_v1alpha1_timemachine_cr.yaml
+	kubectl delete -f deploy/ || true
+	kubectl delete -f deploy/crds/helm.operator-sdk_v1alpha1_timemachine_cr.yaml || true
+	kubectl delete -f deploy/crds/helm.operator-sdk_timemachines_crd.yaml || true
