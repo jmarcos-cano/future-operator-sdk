@@ -14,7 +14,7 @@ package:
 	@helm package ${CHART_FOLDER} -d ${SHARED_FOLDER}
 
 build-app:
-	cd app/
+	cd src/
 	${MAKE}
 build-operator:
 	cd helm/timeMachine

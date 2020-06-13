@@ -9,7 +9,7 @@ spec:
     repository: mcano/future-is-now
   timemachine:
     flux_enabled: true
-    jump_date: November 5, 1985
+    jump_date: November 5, 2015
     version: 1.0.0
 
   ingress:

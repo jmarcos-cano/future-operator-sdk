@@ -1,6 +1,6 @@
 
 image:=mcano/timemachine-operator:1.0
-.PHONY: build push all crd demo deploy undo
+.PHONY: build push all crd demo deploy undo full-demo timemachine
 build:
 	operator-sdk build ${image}
 	docker push ${image}
@@ -14,6 +14,7 @@ demo: crd
 
 deploy:
 	kubectl apply -f deploy/crds/helm.operator-sdk_v1alpha1_timemachine_cr.yaml
+timemachine: deploy
 
 full-demo: crd
 	kubectl apply -f deploy/
@@ -21,6 +22,6 @@ full-demo: crd
 
 
 undo:
-	kubectl delete -f deploy/ || true
 	kubectl delete -f deploy/crds/helm.operator-sdk_v1alpha1_timemachine_cr.yaml || true
 	kubectl delete -f deploy/crds/helm.operator-sdk_timemachines_crd.yaml || true
+	kubectl delete -f deploy/ || true
