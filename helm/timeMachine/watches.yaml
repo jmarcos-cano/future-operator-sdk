@@ -2,4 +2,4 @@
 - group: helm.operator-sdk
   version: v1alpha1
   kind: TimeMachine
-  chart: helm-charts/my-helm-operator
+  chart: helm-charts/canoperator

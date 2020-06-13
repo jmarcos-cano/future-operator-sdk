@@ -16,15 +16,15 @@ spec:
     spec:
       containers:
         - name: {{ .Chart.Name }}
-          image: "{{ .Values.image.repository }}:{{default "1.0.0" .Values.timeMachine.version }}"
+          image: "{{ .Values.image.repository }}:{{default "1.0.0" .Values.timemachine.version }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           env:
             - name: JUMP_DATE
-              value: {{default "" .Values.timeMachine.jump_date }}
+              value: {{default "" .Values.timemachine.jump_date }}
             - name: VERSION
-              value: {{default "1.0.0" .Values.timeMachine.version }}
+              value: {{default "1.0.0" .Values.timemachine.version }}
             - name: FLUX_ENABLED
-              value: "{{ .Values.timeMachine.flux_enabled }}"
+              value: "{{ .Values.timemachine.flux_enabled }}"
           ports:
             - name: http
               containerPort: {{ default 5000 .Values.containerPort }}

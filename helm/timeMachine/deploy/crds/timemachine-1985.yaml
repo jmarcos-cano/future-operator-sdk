@@ -1,28 +1,23 @@
 apiVersion: helm.operator-sdk/v1alpha1
 kind: TimeMachine
 metadata:
-  name: timemachine-2015
+  name: timemachine-1985
 spec:
   # Default values copied from <project_dir>/helm-charts/my-helm-operator/values.yaml
   image:
     pullPolicy: Always
     repository: mcano/future-is-now
   timemachine:
-    flux_enabled: true
+    flux_enabled: false
     jump_date: November 5, 1985
     version: 1.0.0
 
   ingress:
-    annotations:
-      kubernetes.io/ingress.class: traefik
+    annotations: {}
     enabled: false
     hosts:
-    - host: canoperator.local
+    - host: chart-example.local
       paths: []
-      # - path: /*
-      #   backend:
-      #     serviceName: timemachine-2015-canoperator
-      #     servicePort: http
     tls: []
   replicaCount: 2
   service:

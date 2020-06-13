@@ -9,7 +9,7 @@ image:
   pullPolicy: Always
 
 
-timeMachine:
+timemachine:
     jump_date: "November 5, 1955"
     version: 1.0.0
     flux_enabled: True
