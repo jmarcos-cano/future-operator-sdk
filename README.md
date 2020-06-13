@@ -1,7 +1,7 @@
 # The future is now: Kubernetes Operators
 
 
-<img src="/.docs/img/bolt.png"  alt="" style="width:30px;">
+<!-- <img src="/.docs/img/bolt.png"  alt="" style="width:30px;"> -->
 
 
 [Slides](https://www.slideshare.net/MarcosCano2/the-future-is-now-kubernetes-operator-sdk)
