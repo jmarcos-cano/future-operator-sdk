@@ -13,3 +13,9 @@ package:
 	@echo "Packaging my ${CHART_FOLDER}"
 	@helm package ${CHART_FOLDER} -d ${SHARED_FOLDER}
 
+build-app:
+	cd app/
+	${MAKE}
+build-operator:
+	cd helm/timeMachine
+	${MAKE}
