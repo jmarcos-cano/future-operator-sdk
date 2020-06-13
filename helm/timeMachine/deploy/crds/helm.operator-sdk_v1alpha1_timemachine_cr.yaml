@@ -1,0 +1,26 @@
+apiVersion: helm.operator-sdk/v1alpha1
+kind: TimeMachine
+metadata:
+  name: example-timemachine
+spec:
+  # Default values copied from <project_dir>/helm-charts/my-helm-operator/values.yaml
+  
+  image:
+    pullPolicy: Always
+    repository: mcano/future-is-now
+  ingress:
+    annotations: {}
+    enabled: false
+    hosts:
+    - host: chart-example.local
+      paths: []
+    tls: []
+  replicaCount: 2
+  service:
+    port: 80
+    type: LoadBalancer
+  timeMachine:
+    flux_enabled: true
+    jump_date: November 5, 1955
+    version: 1.0.0
+  
